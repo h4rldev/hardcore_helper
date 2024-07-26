@@ -1,0 +1,37 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "${group}",
+		"id": "hardcore_helper",
+		"version": "${version}",
+		"metadata": {
+			"name": "Hardcore Helper",
+			"description": "A server-side mod that notifies another process to delete a world and restart the server on death.",
+			"contributors": {
+				"h4rl": "Owner"
+			},
+			"contact": {},
+			"icon": "assets/example_mod/icon.png",
+			"license": "BSD 3-Clause"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "dev.h4rl.hardcore_helper.HardcoreHelper"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.19.1"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=6.0.0-beta"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.4"
+			}
+		]
+	},
+	"mixin": "hardcore_helper.mixins.json"
+}
