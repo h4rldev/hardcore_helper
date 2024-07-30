@@ -7,4 +7,4 @@ A quilt mod that checks if a person has died, gives a countdown, marks the world
 
 Requires supporting daemon to delete world and restart server, will work on this next.
 
-https://github.com/h4rldev/hardcore_helper_d
+https://github.com/h4rldev/hardcore_helperd
