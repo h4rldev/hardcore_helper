@@ -29,8 +29,6 @@ import net.minecraft.text.Text;
 
 public class HardcoreHelper implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("Hardcore Helper");
-	private ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
-
 	private static final int COUNTDOWN_TIME = 30 * 20; // 30 seconds in ticks (20 ticks per second)
 	private static long remainingTime = COUNTDOWN_TIME;
 
